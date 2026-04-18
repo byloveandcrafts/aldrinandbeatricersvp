@@ -566,7 +566,7 @@
       letter-spacing: 5px;
       text-transform: uppercase;
       color: var(--white);
-      background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold) 60%, var(--gold-light) 100%);
+      background: linear-gradient(135deg, #7A6228 0%, #9B7E3A 60%, var(--gold-light) 100%);
       border: none;
       cursor: pointer;
       transition: all 0.35s;
@@ -656,7 +656,7 @@
     /* ── FOOTER ── */
     footer {
       background:
-        linear-gradient(160deg, #2E1F05 0%, #3A2810 60%, #2E1F05 100%);
+        linear-gradient(160deg, #5C4A1A 0%, #7A6228 60%, #5C4A1A 100%);
       padding: 70px 24px 100px;
       text-align: center;
       position: relative;
@@ -712,6 +712,9 @@
       margin-bottom: 10px;
       position: relative;
       z-index: 1;
+      text-align: center;
+      /* Compensate for letter-spacing so text appears visually centered */
+      padding-left: 9px;
     }
 
     /* ── FLOATING CONTROLS ── */
@@ -778,6 +781,9 @@
       .section-wrap { padding: 70px 18px; }
       .rsvp-form { padding: 36px 22px; }
       .floating-controls { bottom: 76px; }
+      footer { text-align: center; }
+      .footer-monogram { margin-left: auto; margin-right: auto; }
+      .footer-names { text-align: center; width: 100%; display: block; }
     }
 
     @media (max-width: 480px) {
